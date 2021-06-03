@@ -27,15 +27,24 @@ function App() {
     { name: "Kaoru", imageSource: kaoruImg },
     { name: "Yahiko", imageSource: yahikoImg },
   ];
-  let [currentScore, setcurrentScore] = useState(0);
-  let [bestScore, setBestScore] = useState(10);
+  let [currentScore, setCurrentScore] = useState(0);
+  let [bestScore, setBestScore] = useState(0);
   let [cards, setCards] = useState(shuffle(cardsOG));
+  let [selectedCards, setSelectedCards] = useState(new Set());
 
   function onCardSelect(cardName) {
-    // if the card doesn't exist in the selected cards, add 1 point, then shuffle
-    // else, game is over, reset the score, shuffle
-    console.log(`from App: ${cardName}`);
-    setcurrentScore(1);
+    if (selectedCards.has(cardName)) {
+      if (currentScore > bestScore) {
+        setBestScore(currentScore);
+      }
+      setCurrentScore(0);
+      setSelectedCards(new Set());
+    } else {
+      // if the card doesn't exist in the selected cards, add 1 point, then shuffle
+      setSelectedCards((prevCards) => new Set(prevCards.add(cardName)));
+      setCurrentScore((prevScore) => prevScore + 1);
+    }
+
     setCards(shuffle(cardsOG));
   }
 
