@@ -7,16 +7,10 @@ function Cards(props) {
 
   function getCardsAsElements() {
     return props.cards.map((card) => (
-      <figure key={card.name}>
-        <img
-          src={card.imageSource}
-          alt={card.name}
-          width={200}
-          height={250}
-          onClick={onCardSelect}
-        />
-        <figcaption>{card.name}</figcaption>
-      </figure>
+      <div className="Card">
+        <img src={card.image} alt={card.name} onClick={onCardSelect} />
+        <div className="Card-Caption">{card.name}</div>
+      </div>
     ));
   }
 
