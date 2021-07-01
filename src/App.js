@@ -62,7 +62,7 @@ function App() {
   }
 
   return (
-    <div style={{ backgroundColor: "black" }}>
+    <div>
       <Score currentScore={currentScore} bestScore={bestScore} />
       <Cards cards={cards} onCardSelect={onCardSelect} />
     </div>
