@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Score from "./components/Score";
+import Scoreboard from "./components/Scoreboard";
 import Cards from "./components/Cards";
 import {
   Bach,
@@ -63,7 +63,7 @@ function App() {
 
   return (
     <div>
-      <Score currentScore={currentScore} bestScore={bestScore} />
+      <Scoreboard currentScore={currentScore} bestScore={bestScore} />
       <Cards cards={cards} onCardSelect={onCardSelect} />
     </div>
   );
