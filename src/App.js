@@ -15,6 +15,7 @@ import {
   Rachmaninoff,
   Schubert,
 } from "./components/ComposerImages";
+import Banner from "./components/Banner";
 
 function shuffle(cards) {
   for (let i = cards.length - 1; i > 0; i--) {
@@ -63,7 +64,8 @@ function App() {
 
   return (
     <div>
-      <Scoreboard currentScore={currentScore} bestScore={bestScore} />
+      <Banner currentScore={currentScore} bestScore={bestScore} />
+      {/*<Scoreboard currentScore={currentScore} bestScore={bestScore} />*/}
       <Cards cards={cards} onCardSelect={onCardSelect} />
     </div>
   );

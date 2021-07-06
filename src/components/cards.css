@@ -1,14 +1,17 @@
 :root {
-  --card-width: 250px;
+  --card-width: 200px;
+  --card-height: 300px;
+  --hover-card-width: 220px;
+  --hover-card-height: 320px;
   background-color: black;
-  font-family: 'EB Garamond', serif;
+  font-family: "Bebas Neue", serif;
 }
 .grid-container {
   display: grid;
   margin: auto;
 
   grid-template-columns: repeat(auto-fill, var(--card-width));
-  grid-auto-rows: 350px;
+  grid-auto-rows: var(--card-height);
   grid-gap: 3rem;
   justify-content: center;
 }
@@ -28,14 +31,21 @@
   border-radius: 3%;
 }
 
-.Portrait {
+.Card--hovering {
+  transition: all 0.2s ease-in-out;
+}
+
+.Card--hovering:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 6px 3px gold;
+}
+
+.Card-picture {
   border-top-left-radius: 3%;
   border-top-right-radius: 3%;
 }
 
-.Card-Caption {
-  font-size: 150%;
-  color: darkgoldenrod;
+.Card-composerName {
+  font-size: 170%;
+  margin: auto;
 }
-
-
