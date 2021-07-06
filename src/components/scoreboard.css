@@ -1,46 +1,52 @@
 :root {
   --grid-width: 200px;
-  --scoreboard-width: 300px;
+  --grid-min-width: 150px;
   --current-score-color: seagreen;
   --best-score-color: rebeccapurple;
 }
 
 .Scoreboard {
-  background-color: white;
-  color: white;
   font-family: "Tourney", cursive;
   font-weight: 400;
   font-size: 2rem;
-  margin: 2rem 0;
+  background-color: white;
+  color: white;
+
+  width: var(--grid-width);
+  min-width: var(--grid-min-width);
+  margin: 2rem 5px;
   border: 1px dashed black;
 
-  display: grid;
-  grid-template-columns: var(--grid-width) var(--grid-width);
-  grid-template-areas:
-    "titleCurrent titleBest"
-    "currentScore bestScore";
-  justify-content: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .Scoreboard-titleCurrent {
-  grid-area: titleCurrent;
   background-color: var(--current-score-color);
   text-decoration: underline;
 }
 
 .Scoreboard-titleBest {
-  grid-area: titleBest;
   background-color: var(--best-score-color);
   text-decoration: underline;
 }
 
 .Scoreboard-currentScore {
-  grid-area: currentScore;
   background-color: var(--current-score-color);
 }
 
 .Scoreboard-bestScore {
-  grid-area: bestScore;
   background-color: var(--best-score-color);
+}
+
+.Divided {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Divided-divider {
+  flex-grow: 1;
+  border-bottom: 1px dashed white;
 }

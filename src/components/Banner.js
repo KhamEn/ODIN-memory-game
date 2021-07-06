@@ -1,6 +1,5 @@
 import "./banner.css";
-import LogoWhite from "../images/LogoWhite.png";
-import { Scoreboard, CurrentScore, BestScore } from "./Scoreboard";
+import Scoreboard from "./Scoreboard";
 
 function Banner(props) {
   return (

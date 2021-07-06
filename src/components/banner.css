@@ -22,25 +22,7 @@
 .Banner-logoLine:before,
 .Banner-logoLine:after {
   content: "";
-  flex: 1;
-  height: 1px;
+  flex-grow: 1;
+  height: 2px;
   background-color: var(--line-color);
-}
-
-.Lines-Between {
-  background: linear-gradient(
-    transparent 45%,
-    red 45%,
-    red 55%,
-    transparent 55%
-  );
-}
-
-.Lines-Between span {
-  background: white;
-  /*padding: 0 2px;*/
-}
-
-.Lines-Between span:last-of-type {
-  float: right;
 }

@@ -1,26 +1,19 @@
 import "./scoreboard.css";
 
-function CurrentScore(props) {
-  return (
-    <div className="Scoreboard-currentScore">SCORE: {props.currentScore}</div>
-  );
-}
-
-function BestScore(props) {
-  return (
-    <div className="Scoreboard-bestScore">BEST SCORE: {props.bestScore}</div>
-  );
-}
-
 function Scoreboard(props) {
   return (
-    <div className="Scoreboard">
-      <div className="Scoreboard-titleCurrent">Current</div>
-      <div className="Scoreboard-currentScore">{props.currentScore}</div>
-      <div className="Scoreboard-titleBest">Best</div>
-      <div className="Scoreboard-bestScore">{props.bestScore}</div>
+    <div className="Divided">
+      <span className="Scoreboard">
+        <div className="Scoreboard-titleCurrent">Current</div>
+        <div className="Scoreboard-currentScore">{props.currentScore}</div>
+      </span>
+      <span className="Divided-divider"></span>
+      <span className="Scoreboard">
+        <div className="Scoreboard-titleBest">Best</div>
+        <div className="Scoreboard-bestScore">{props.bestScore}</div>
+      </span>
     </div>
   );
 }
 
-export { CurrentScore, BestScore, Scoreboard };
+export default Scoreboard;
