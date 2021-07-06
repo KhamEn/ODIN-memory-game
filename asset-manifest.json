@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/ODIN-memory-game/static/css/main.6fef104e.chunk.css",
+    "main.js": "/ODIN-memory-game/static/js/main.270e584f.chunk.js",
+    "main.js.map": "/ODIN-memory-game/static/js/main.270e584f.chunk.js.map",
+    "runtime-main.js": "/ODIN-memory-game/static/js/runtime-main.1a66c97d.js",
+    "runtime-main.js.map": "/ODIN-memory-game/static/js/runtime-main.1a66c97d.js.map",
+    "static/js/2.8a6eae71.chunk.js": "/ODIN-memory-game/static/js/2.8a6eae71.chunk.js",
+    "static/js/2.8a6eae71.chunk.js.map": "/ODIN-memory-game/static/js/2.8a6eae71.chunk.js.map",
+    "index.html": "/ODIN-memory-game/index.html",
+    "static/css/main.6fef104e.chunk.css.map": "/ODIN-memory-game/static/css/main.6fef104e.chunk.css.map",
+    "static/js/2.8a6eae71.chunk.js.LICENSE.txt": "/ODIN-memory-game/static/js/2.8a6eae71.chunk.js.LICENSE.txt",
+    "static/media/Bach.da65ab26.jpg": "/ODIN-memory-game/static/media/Bach.da65ab26.jpg",
+    "static/media/Beethoven.a25b555a.jpg": "/ODIN-memory-game/static/media/Beethoven.a25b555a.jpg",
+    "static/media/Brahms.a6d8e80b.jpg": "/ODIN-memory-game/static/media/Brahms.a6d8e80b.jpg",
+    "static/media/Bruckner.dfd9501a.jpg": "/ODIN-memory-game/static/media/Bruckner.dfd9501a.jpg",
+    "static/media/Chopin.4cb2b1dd.jpg": "/ODIN-memory-game/static/media/Chopin.4cb2b1dd.jpg",
+    "static/media/Dvorak.36756c58.jpg": "/ODIN-memory-game/static/media/Dvorak.36756c58.jpg",
+    "static/media/Glass.cb51d44d.jpg": "/ODIN-memory-game/static/media/Glass.cb51d44d.jpg",
+    "static/media/Haydn.c485f8b1.jpg": "/ODIN-memory-game/static/media/Haydn.c485f8b1.jpg",
+    "static/media/Mendelssohn.54d1fd06.jpg": "/ODIN-memory-game/static/media/Mendelssohn.54d1fd06.jpg",
+    "static/media/Mozart.d4e4d1dc.jpg": "/ODIN-memory-game/static/media/Mozart.d4e4d1dc.jpg",
+    "static/media/Rachmaninoff.0a69e0ea.jpg": "/ODIN-memory-game/static/media/Rachmaninoff.0a69e0ea.jpg",
+    "static/media/Schubert.5bcdf48b.jpg": "/ODIN-memory-game/static/media/Schubert.5bcdf48b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a66c97d.js",
+    "static/js/2.8a6eae71.chunk.js",
+    "static/css/main.6fef104e.chunk.css",
+    "static/js/main.270e584f.chunk.js"
+  ]
+}
