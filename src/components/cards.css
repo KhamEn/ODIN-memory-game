@@ -7,9 +7,9 @@
   font-family: "Bebas Neue", serif;
 }
 .grid-container {
-  display: grid;
   margin: auto;
 
+  display: grid;
   grid-template-columns: repeat(auto-fill, var(--card-width));
   grid-auto-rows: var(--card-height);
   grid-gap: 3rem;
@@ -23,12 +23,23 @@
 }
 
 .Card {
-  display: flex;
-  flex-direction: column;
   background-color: white;
   cursor: pointer;
-  text-align: center;
   border-radius: 3%;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Card-composerPicture {
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+}
+
+.Card-composerName {
+  font-size: 170%;
+  margin: auto;
 }
 
 .Card--hovering {
@@ -38,14 +49,4 @@
 .Card--hovering:hover {
   transform: scale(1.05);
   box-shadow: 0 0 6px 3px gold;
-}
-
-.Card-picture {
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
-}
-
-.Card-composerName {
-  font-size: 170%;
-  margin: auto;
 }

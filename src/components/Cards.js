@@ -11,7 +11,7 @@ function Cards(props) {
         <img
           src={card.image}
           alt={card.name}
-          className="Card-picture"
+          className="Card-composerPicture"
           onClick={onCardSelect}
         />
         <div className="Card-composerName">{card.name}</div>
